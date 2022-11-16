@@ -1,11 +1,11 @@
-import Avatar1 from "./Assets/Avatar.svg";
-import Avatar2 from "./Assets/Avatar2.svg";
-import Avatar3 from "./Assets/Avatar3.svg";
-import Avatar4 from "./Assets/Avatar4.svg";
-import Avatar5 from "./Assets/Avatar5.svg";
-import Avatar6 from "./Assets/Avatar6.svg";
-import Avatar7 from "./Assets/Avatar7.svg";
-import Avatar8 from "./Assets/Avatar8.svg";
+import Avatar1 from "./Assets/Avatar1.png";
+import Avatar2 from "./Assets/Avatar2.png";
+import Avatar3 from "./Assets/Avatar3.png";
+import Avatar4 from "./Assets/Avatar4.png";
+import Avatar5 from "./Assets/Avatar5.png";
+import Avatar6 from "./Assets/Avatar6.png";
+import Avatar7 from "./Assets/Avatar7.png";
+import Avatar8 from "./Assets/Avatar8.png";
 const data = [
   {
     id: 1,
