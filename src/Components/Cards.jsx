@@ -3,9 +3,9 @@ import Star from "../Assets/Star.svg";
 
 export default function Cards(props) {
   return (
-    <div className="  border-2 border-solid border-[#D7D7D7] rounded-[15px]  p-3 mb-5 md:mb-0 ">
+    <div className=" w-fit border-2 border-solid border-[#D7D7D7] rounded-[15px]  p-3 mb-5 md:mb-0 ">
       <div className="">
-        <img src={props.image} alt="" />
+        <img src={props.image} alt="" className="w-full" />
         <div className="grid grid-cols-2 justify-between items-baseline space-y-3  ">
           <div>
             <p className="text-xs font-normal text-[#434343]">Desert king</p>

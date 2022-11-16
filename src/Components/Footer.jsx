@@ -6,7 +6,7 @@ import Twitter from "../Assets/twitter.svg";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#1D1D1E] py-4 px-10  justify-items-center">
+    <footer className="bg-[#1D1D1E] py-4 px-10  justify-items-center font-Red-Rose">
       <div className="grid md:grid-cols-2 lg:grid-cols-4 justify-center items-center md:space-x-20 ">
         <div className=" py-10">
           <div className="flex flex-col space-y-20">

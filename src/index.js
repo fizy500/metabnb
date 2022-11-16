@@ -5,6 +5,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App";
 import HeaderDesktop from "./Components/HeaderDesktop";
 import PageToStay from "./Pages/PageToStay";
+import UnderConstuction from "./Pages/UnderConstruction";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -13,6 +14,10 @@ const router = createBrowserRouter([
   {
     path: "/Place",
     element: <PageToStay />,
+  },
+  {
+    path: "/UnderConstuction",
+    element: <UnderConstuction />,
   },
 ]);
 const root = ReactDOM.createRoot(document.getElementById("root"));

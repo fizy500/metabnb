@@ -14,7 +14,8 @@ export default function Home() {
     return <Cards key={item.id} {...item} />;
   });
   return (
-    <main className="lg:max-w-full z-[-2] w-full  ">
+    <>
+    <main className="lg:max-w-full z-[-2] w-full   font-Red-Rose ">
       <div className="grid md:grid-cols-2 justify-items-center items-center px-10 py-7">
         <div className=" col-span-1">
           <div className="  py-10 space-y-2">
@@ -101,7 +102,8 @@ export default function Home() {
           </div>
         </div>
       </div>
+      </main>
       <Footer />
-    </main>
+      </>
   );
 }

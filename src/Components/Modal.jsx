@@ -1,14 +1,16 @@
 import React from "react";
+import ReactDom from "react-dom"
 import Cross from "../Assets/Cross.svg";
 import Meta2 from "../Assets/Meta.svg";
 import Wallet from "../Assets/WalletConnect.svg";
 import Direction from "../Assets/Direction.svg";
 
-const Modal = ({ open, onClose }) => {
+const Modal = ({ open, children , onClose}) => {
   if (!open) return null;
-  return (
+  return ReactDom.createPortal(
+    <>
     <div
-      className="w-[100vw] h-full bg-[rgba(0,0,0,0.5)] fixed z-50 lg:max-w-full p-20 flex justify-center items-center"
+      className="w-[100vw] h-full bg-[rgba(0,0,0,0.5)] fixed z-50 lg:max-w-full p-20 flex justify-center items-center font-Red-Rose"
       onClick={onClose}
     >
       <div
@@ -37,8 +39,11 @@ const Modal = ({ open, onClose }) => {
             <img src={Direction} alt="" className="" />
           </div>
         </div>
+        </div>
+        {children}
       </div>
-    </div>
+    </>,
+    document.getElementById('portal')
   );
 };
 export default Modal;

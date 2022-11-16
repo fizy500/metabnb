@@ -3,49 +3,94 @@ import LogoHouse from "../Assets/logoHouse.svg";
 import LogoWord from "../Assets/logoWord.svg";
 import Modal from "./Modal";
 
-export default function HeaderDesktop() {
-  const [openModal, setOpenModal] = useState(false);
-  return (
-    <header className="w-full">
-      <Modal open={openModal} onClose={() => setOpenModal(false)} />
-      <div className="flex justify-between py-6 px-10">
-        <div className="flex items-baseline space-x-2">
-          <img src={LogoHouse} alt="" />
-          <img src={LogoWord} alt="" />
-        </div>
-        <div className="flex space-x-6">
-          <a
-            href="www.airbnb.com"
-            className="text-xl font-normal text-[#434343] "
-          >
-            Home
-          </a>
-          <a href="/Place" className="text-xl font-normal text-[#434343] ">
-            Place to stay
-          </a>
-          <a
-            href="www.airbnb.com"
-            className="text-xl font-normal text-[#434343] "
-          >
-            NFTs
-          </a>
+const Nav = () => {
+  const [toggleMenu, setToggleMenu] = useState(false);
 
-          <a
-            href="www.airbnb.com"
-            className="text-xl font-normal text-[#434343] "
-          >
-            Community
-          </a>
+  const handleToggle = () => {
+    setToggleMenu(!toggleMenu);
+  };
+
+  return (
+    <header>
+      <div className="px-4 py-4 text-white flex  justify-between bg-violet-400  lg:bg-white lg:px-10 font-Red-Rose">
+        <ul className="flex items-baseline space-x-2">
+          <li>
+            <img src={LogoHouse} alt="" />
+          </li>
+          <li>
+            {" "}
+            <img src={LogoWord} alt="" />
+          </li>
+        </ul>
+        <div
+          className={
+            toggleMenu
+              ? "md:flex  md:pt-0 pt-10 w-full md:w-auto"
+              : "hidden md:flex "
+          }
+          id="menu"
+        >
+          <ul>
+            <li className="md:inline-block cursor-pointer hover:text-gray-500 border-b md:border-none py-2 px-3">
+              <a href="/" className="text-xl font-normal text-white lg:text-[#434343] ">
+                Home
+              </a>
+            </li>
+            <li className="dropdown md:inline-block cursor-pointer hover:text-gray-500 border-b md:border-none py-2 px-3 relative">
+              <a href="/Place" className="text-xl font-normal text-white lg:text-[#434343] ">
+                Place to stay
+              </a>
+            </li>
+            <li className="md:inline-block cursor-pointer hover:text-gray-500 border-b md:border-none py-2 px-3">
+              <a
+                href="/UnderConstuction"
+                className="text-xl font-normal text-white lg:text-[#434343] "
+              >
+                NFTs
+              </a>
+            </li>
+            <li className="md:inline-block cursor-pointer hover:text-gray-500 border-b md:border-none py-2 px-3">
+              <a
+                href="/UnderConstuction"
+                className="text-xl font-normal text-white lg:text-[#434343] "
+              >
+                Community
+              </a>
+            </li>
+          </ul>
+
+          <ul className="block lg:hidden mt-2">
+            <li>
+              <button className="bg-[#A02279] text-white font-normal text-base py-2 px-8 rounded-[10px]">
+                Connect wallet
+              </button>
+            </li>
+          </ul>
         </div>
-        <div>
-          <button
-            className="bg-[#A02279] text-white font-normal text-base py-2 px-8 rounded-[10px]"
-            onClick={() => setOpenModal(true)}
+
+        <ul className="hidden lg:block">
+          <li>
+            <button className="bg-[#A02279] text-white font-normal text-base py-2 px-8 rounded-[10px]">
+              Connect wallet
+            </button>
+          </li>
+        </ul>
+
+        <div className="cursor-pointer md:hidden">
+          <input class="menu-btn hidden" type="checkbox" id="menu-btn" />
+          <label
+            class="menu-icon block cursor-pointer md:hidden px-2 py-4 relative select-none"
+            for="menu-btn"
           >
-            Connect wallet
-          </button>
+            <span
+              onClick={handleToggle}
+              class="navicon bg-white-darkest flex items-center relative"
+            ></span>
+          </label>
         </div>
       </div>
     </header>
   );
-}
+};
+
+export default Nav;
