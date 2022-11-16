@@ -13,7 +13,7 @@ export default function PlaceToStay() {
       <main className="w-full font-Red-Rose">
         <section className=" grid grid-rows-1 justify-center items-center space-y-8 py-5  w-full px-4">
           <div className="overflow-auto grid grid-cols-1 border border-solid border-[#B4B4B4] rounded-lg  lg:border-none w-full  ">
-            <div className="grid grid-cols-9 font-normal  text-xl text-[#434343]  px-3 ">
+            <div className="grid grid-cols-9 flex-shrink-0 font-normal  text-xl text-[#434343]  px-3 ">
               <button className="active:border-b-2 border-red-400 px-2">
                 Restaurant
               </button>
