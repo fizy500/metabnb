@@ -66,7 +66,7 @@ export default function Home() {
         <h2 className="font-bold text-2xl  md:text-5xl text-black text-center">
           Inspiration for your next adventure
         </h2>
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10  justify-items-center items-center py-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10  justify-items-center items-center py-6 px-5">
           {Data}
         </div>
       </section>
@@ -89,7 +89,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className=" col-span-1 ">
+          <div className=" col-span-1 py-4 ">
             <img src={Frame} alt="" />
           </div>
         </div>

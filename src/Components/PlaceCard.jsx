@@ -3,7 +3,7 @@ import Star from "../Assets/Star.svg";
 
 export default function Cards2(props) {
   return (
-    <div className="  border-2 border-solid border-[#D7D7D7] rounded-[15px]  p-3 mb-5 md:mb-0 z-10">
+    <div className="w-full  border-2 border-solid border-[#D7D7D7] rounded-[15px]  p-3 mb-5 md:mb-0 z-10">
       <div className="">
         <img src={props.image} alt="" className="w-full" />
         <div className="grid grid-cols-2 justify-between items-baseline space-y-3  ">
