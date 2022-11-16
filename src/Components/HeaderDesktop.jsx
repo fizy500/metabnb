@@ -4,12 +4,12 @@ import LogoWord from "../Assets/logoWord.svg";
 import Modal from "./Modal";
 
 const Nav = () => {
+  const [isOpen, setIsOpen] = useState(false);
   const [toggleMenu, setToggleMenu] = useState(false);
-
   const handleToggle = () => {
     setToggleMenu(!toggleMenu);
   };
-  const [isOpen, setIsOpen] = useState(false)
+  
   return (
     <>
       <Modal open={isOpen}>

@@ -5,7 +5,7 @@ import Meta2 from "../Assets/Meta.svg";
 import Wallet from "../Assets/WalletConnect.svg";
 import Direction from "../Assets/Direction.svg";
 
-const Modal = ({ open, onClose }) => {
+const Modal = ({ open,onClose }) => {
   if (!open) return null;
   if (open === true) {
     document.body.style.overflow = "hidden";
