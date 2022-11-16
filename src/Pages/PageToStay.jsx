@@ -42,8 +42,10 @@ export default function PlaceToStay() {
           </div>
         </section>
 
-        <Footer />
-      </main>
+        
+            </main>
+            <Footer />
+            
     </>
   );
 }
