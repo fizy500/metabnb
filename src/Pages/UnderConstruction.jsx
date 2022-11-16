@@ -4,9 +4,9 @@ import Footer from "../Components/Footer";
 export default function UnderConstuction() {
   return (
     <>
-      <main className="flex justify-center items-center w-full h-[100vh] bg-indigo-600 font-Red-Rose">
-        <div className="">
-          <p className="font-bold text-base">Ooops! I am Still under construction</p>
+      <main className="flex justify-center items-center w-full h-[100vh] bg-violet-300 font-Red-Rose p-6">
+        <div className=" flex justify-center items-center">
+          <p className="font-bold text-3xl text-white text-center">Ooops! I am Still under construction</p>
         </div>
       </main>
       <Footer />

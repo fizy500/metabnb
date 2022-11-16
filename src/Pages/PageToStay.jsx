@@ -1,11 +1,11 @@
 import React from "react";
 import Footer from "../Components/Footer";
 import Setting from "../Assets/setting-5.svg";
-import data from "../data";
+import data2 from "../data";
 import Cards2 from "../Components/PlaceCard";
 
 export default function PlaceToStay() {
-  const DataTwo = data.map((item) => {
+  const DataTwo = data2.map((item) => {
     return <Cards2 key={item.id} {...item} />;
   });
   return (

@@ -1,20 +1,22 @@
 import React from "react";
-import ReactDom from "react-dom"
+// import ReactDom from "react"
 import Cross from "../Assets/Cross.svg";
 import Meta2 from "../Assets/Meta.svg";
 import Wallet from "../Assets/WalletConnect.svg";
 import Direction from "../Assets/Direction.svg";
 
-const Modal = ({ open, children , onClose}) => {
+const Modal = ({ open, onClose }) => {
   if (!open) return null;
-  return ReactDom.createPortal(
-    <>
+  if (open === true) {
+    document.body.style.overflow = "hidden";
+  }
+  return (
     <div
-      className="w-[100vw] h-full bg-[rgba(0,0,0,0.5)] fixed z-50 lg:max-w-full p-20 flex justify-center items-center font-Red-Rose"
+      className="w-[100vw] h-full bg-[rgba(0,0,0,0.5)] bg-opacity-25 backdrop-blur-sm fixed inset-0  z-[1000] lg:max-w-full  flex justify-center items-center"
       onClick={onClose}
     >
       <div
-        className="bg-white rounded-md w-full lg:w-[50%] py-10  left-[50%] top-[40%] "
+        className="bg-white rounded-md w-[95%] lg:w-[50%] py-10  left-[50%] top-[40%] "
         onClick={(e) => {
           e.stopPropagation();
         }}
@@ -39,11 +41,8 @@ const Modal = ({ open, children , onClose}) => {
             <img src={Direction} alt="" className="" />
           </div>
         </div>
-        </div>
-        {children}
       </div>
-    </>,
-    document.getElementById('portal')
+    </div>
   );
 };
 export default Modal;
