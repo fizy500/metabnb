@@ -23,11 +23,21 @@ export default function PlaceToStay() {
               <button className="active:border-b-2 border-red-400 px-2">
                 Castle
               </button>
-              <button className="active:border-b-2 border-red-400 px-2 no-wrap flex-nowrap">fantast city</button>
-              <button className="active:border-b-2 border-red-400 px-2 ">beach</button>
-              <button className="active:border-b-2 border-red-400 px-2 ">Carbins</button>
-              <button className="active:border-b-2 border-red-400 px-8 flex justify-center items-center ">Off-grid</button>
-              <button className="active:border-b-2 border-red-400 px-2 ">Farm</button>
+              <button className="active:border-b-2 border-red-400 px-2 no-wrap flex-nowrap">
+                fantast city
+              </button>
+              <button className="active:border-b-2 border-red-400 px-2 ">
+                beach
+              </button>
+              <button className="active:border-b-2 border-red-400 px-2 ">
+                Carbins
+              </button>
+              <button className="active:border-b-2 border-red-400 px-8 flex justify-center items-center ">
+                Off-grid
+              </button>
+              <button className="active:border-b-2 border-red-400 px-2 ">
+                Farm
+              </button>
               <button className="border border-solid border-[#B4B4B4] rounded-lg  text-base text-[#333333] flex justify-between flex-shrink-0 px-2 py-2 space-x-1  w-fit">
                 <p>Location</p>
                 <img src={Setting} alt="" />
@@ -38,8 +48,8 @@ export default function PlaceToStay() {
             {DataTwo}
           </div>
         </section>
-        <Footer />
       </main>
+      <Footer />
     </>
   );
 }
