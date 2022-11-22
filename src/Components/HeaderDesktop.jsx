@@ -9,14 +9,12 @@ const Nav = () => {
   const handleToggle = () => {
     setToggleMenu(!toggleMenu);
   };
-  
+
   return (
     <>
-      <Modal open={isOpen}>
-
-      </Modal>
       <header>
         <div className="px-4 py-4 text-white flex  justify-between bg-violet-400  lg:bg-white lg:px-10 font-Red-Rose">
+          <Modal open={isOpen} />
           <ul className="flex items-baseline space-x-2">
             <li>
               <img src={LogoHouse} alt="" />
@@ -34,7 +32,7 @@ const Nav = () => {
             }
             id="menu"
           >
-            <ul>
+            <ul className="lg:space-x-5">
               <li className="md:inline-block cursor-pointer hover:text-gray-500 border-b md:border-none py-2 px-3">
                 <a
                   href="/"
@@ -71,7 +69,10 @@ const Nav = () => {
 
             <ul className="block lg:hidden mt-2">
               <li>
-                <button className="bg-[#A02279] text-white font-normal  text-sm py-2 px-8 rounded-[10px]" onClick={() => setIsOpen(true)}>
+                <button
+                  className="bg-[#A02279] text-white font-normal  text-sm py-2 px-8 rounded-[10px]"
+                  onClick={() => setIsOpen(true)}
+                >
                   Connect wallet
                 </button>
               </li>
@@ -80,7 +81,10 @@ const Nav = () => {
 
           <ul className="hidden lg:block">
             <li>
-              <button className="bg-[#A02279] text-white font-normal text-base py-2 px-8 rounded-[10px]" onClick={() => setIsOpen(true)}>
+              <button
+                className="bg-[#A02279] text-white font-normal text-base py-2 px-8 rounded-[10px]"
+                onClick={() => setIsOpen(true)}
+              >
                 Connect wallet
               </button>
             </li>

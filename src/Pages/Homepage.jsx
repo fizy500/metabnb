@@ -1,5 +1,4 @@
 import React from "react";
-// import HeaderDesktop from "../Components/HeaderDesktop";
 import Hero from "../Assets/Herogroup.png";
 import MbToken from "../Assets/mbToken.svg";
 import MetaMask from "../Assets/metamask.svg";
@@ -16,7 +15,7 @@ export default function Home() {
   return (
     <>
     <main className="lg:max-w-full z-[-2] w-full   font-Red-Rose ">
-      <div className="grid md:grid-cols-2 justify-items-center items-center px-10 py-7">
+      <div className="grid md:grid-cols-2 justify-between items-center px-10 py-7">
         <div className=" col-span-1">
           <div className="  py-10 space-y-2">
             <h2 className="font-normal text-[36px]  md:text-[56px] text-[#434343]">
@@ -48,7 +47,7 @@ export default function Home() {
           </div>
         </div>
         <div className=" col-span-1">
-          <img src={Hero} alt="" className="w-full" />
+          <img src={Hero} alt="" className="w-full pl-0 lg:pl-10" />
         </div>
       </div>
 
@@ -63,7 +62,7 @@ export default function Home() {
         </div>
       </div>
       <section className=" grid grid-rows-1 justify-center items-center mb-10 py-5">
-        <h2 className="font-bold text-2xl  md:text-5xl text-black text-center">
+        <h2 className="font-bold text-2xl py-5  md:text-5xl text-black text-center">
           Inspiration for your next adventure
         </h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10  justify-items-center items-center py-6 px-5">

@@ -5,14 +5,17 @@ import Meta2 from "../Assets/Meta.svg";
 import Wallet from "../Assets/WalletConnect.svg";
 import Direction from "../Assets/Direction.svg";
 
-const Modal = ({ open,onClose }) => {
+const Modal = ({ open, onClose }) => {
   if (!open) return null;
-  if (open === true) {
+  if (!open === false) {
     document.body.style.overflow = "hidden";
+  }
+  else if (open === true && onclick === true) {
+    document.body.style.overflow = "block";
   }
   return (
     <div
-      className="w-[100vw] h-full bg-[rgba(0,0,0,0.5)] bg-opacity-25 backdrop-blur-sm fixed inset-0  z-[1000] lg:max-w-full  flex justify-center items-center"
+      className="w-[100vw] h-full bg-[rgba(0,0,0,0.5)] bg-opacity-25 backdrop-blur-sm fixed inset-0  z-[1000] lg:max-w-full  flex justify-center items-center  "
       onClick={onClose}
     >
       <div
