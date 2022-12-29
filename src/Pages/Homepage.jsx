@@ -65,7 +65,7 @@ export default function Home() {
         <h2 className="font-bold text-2xl py-5  md:text-5xl text-black text-center">
           Inspiration for your next adventure
         </h2>
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10  justify-items-center items-center py-6 px-5">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5  justify-items-center items-center py-6 px-5">
           {Data}
         </div>
       </section>

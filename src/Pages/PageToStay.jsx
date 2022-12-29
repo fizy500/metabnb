@@ -44,7 +44,7 @@ export default function PlaceToStay() {
               </button>
             </div>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-7  justify-items-center items-center">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5  justify-items-center items-center">
             {DataTwo}
           </div>
         </section>

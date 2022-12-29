@@ -7,11 +7,9 @@ import Direction from "../Assets/Direction.svg";
 
 const Modal = ({ open, onClose }) => {
   if (!open) return null;
+  if (onClose) return true;
   if (!open === false) {
     document.body.style.overflow = "hidden";
-  }
-  else if (open === true && onclick === true) {
-    document.body.style.overflow = "block";
   }
   return (
     <div
@@ -36,12 +34,12 @@ const Modal = ({ open, onClose }) => {
         <div className="px-5 space-y-3">
           <div className="flex justify-between px-2 py-1 border border-solid border-[#CFD8DC] rounded-xl">
             <img src={Meta2} alt="" className="" />
-            <img src={Direction} alt="" className="" />
+            <img src={Direction} alt="" className="cursor-pointer" />
           </div>
 
           <div className="flex justify-between px-2 py-1 border border-solid border-[#CFD8DC] rounded-xl">
             <img src={Wallet} alt="" className="" />
-            <img src={Direction} alt="" className="" />
+            <img src={Direction} alt="" className="cursor-pointer" />
           </div>
         </div>
       </div>

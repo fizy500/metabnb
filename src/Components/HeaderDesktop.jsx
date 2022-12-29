@@ -12,8 +12,8 @@ const Nav = () => {
 
   return (
     <>
-      <header>
-        <div className="px-4 py-4 text-white flex  justify-between bg-violet-400  lg:bg-white lg:px-10 font-Red-Rose">
+      <header  className="sticky top-0 shadow-md z-50">
+        <div className="px-4 py-4 text-white flex  justify-between bg-violet-400  lg:bg-white lg:px-10 font-Red-Rose top-0 bottom-0">
           <Modal open={isOpen} />
           <ul className="flex items-baseline space-x-2">
             <li>
@@ -33,7 +33,7 @@ const Nav = () => {
             id="menu"
           >
             <ul className="lg:space-x-5">
-              <li className="md:inline-block cursor-pointer hover:text-gray-500 border-b md:border-none py-2 px-3">
+              <li className="lg:inline-block cursor-pointer hover:text-gray-500 border-b md:border-none py-2 px-3">
                 <a
                   href="/"
                   className="text-xl font-normal text-white lg:text-[#434343] "
@@ -41,7 +41,7 @@ const Nav = () => {
                   Home
                 </a>
               </li>
-              <li className="dropdown md:inline-block cursor-pointer hover:text-gray-500 border-b md:border-none py-2 px-3 relative">
+              <li className="dropdown lg:inline-block cursor-pointer hover:text-gray-500 border-b md:border-none py-2 px-3 relative">
                 <a
                   href="/Place"
                   className="text-xl font-normal text-white lg:text-[#434343] "
@@ -49,7 +49,7 @@ const Nav = () => {
                   Place to stay
                 </a>
               </li>
-              <li className="md:inline-block cursor-pointer hover:text-gray-500 border-b md:border-none py-2 px-3">
+              <li className="lg:inline-block cursor-pointer hover:text-gray-500 border-b md:border-none py-2 px-3">
                 <a
                   href="/UnderConstuction"
                   className="text-xl font-normal text-white lg:text-[#434343] "
@@ -57,7 +57,7 @@ const Nav = () => {
                   NFTs
                 </a>
               </li>
-              <li className="md:inline-block cursor-pointer hover:text-gray-500 border-b md:border-none py-2 px-3">
+              <li className="lg:inline-block cursor-pointer hover:text-gray-500 border-b md:border-none py-2 px-3">
                 <a
                   href="/UnderConstuction"
                   className="text-xl font-normal text-white lg:text-[#434343] "
